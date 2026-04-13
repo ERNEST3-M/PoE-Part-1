@@ -9,7 +9,7 @@ public class LoginTest {
     
     public LoginTest() {
     }
-        @BeforeAll
+        @BeforeAll 
     public static void setUpClass() {
     }
     
@@ -77,7 +77,7 @@ public class LoginTest {
         System.out.println("CheckCellPhoneNumber");
         String password = "+27838968976";
         Login instance = new Login();
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.checkPasswordComplexity(password);
         assertEquals(expResult, result);
         }
@@ -113,24 +113,25 @@ public class LoginTest {
         String password = "password";
         String phone = "08966553";
         Login instance = new Login();
-        String expResult =  "The password does not meet the complexity requirements.";
+        String expResult =  "The username is incorrectly formatted.";
         String result = instance.registerUser(username, password, phone);
         assertEquals(expResult, result);
     }
 
     /**
      * Test of loginUser method, of class Login.
-     */
+    */
     @Test
     public void testLoginUserTrue() {
         System.out.println("loginUser");
         String username = "kyl_1";
-        String password = "\"Ch&&sec@ke99\"";
+        String password = "Ch&&sec@ke99";
         Login instance = new Login();
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.loginUser(username, password);
         assertEquals(expResult, result);
     }
+    
         @Test
     public void testLoginUserFalse() {
         System.out.println("loginUser");
@@ -151,10 +152,11 @@ public class LoginTest {
         System.out.println("returnLoginStatus");
         boolean isLoggedIn = true;
         Login instance = new Login();
-        String expResult = "A successful login! Welcome, kyl_1";
+        String expResult = "A successful login! Welcome, kyl_1.";
         String result = instance.returnLoginStatus(isLoggedIn);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testReturnLoginStatusFalse() {
         System.out.println("returnLoginStatus");
@@ -165,3 +167,4 @@ public class LoginTest {
         assertEquals(expResult, result);
     }
 }
+

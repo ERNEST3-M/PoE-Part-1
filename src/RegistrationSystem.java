@@ -4,7 +4,7 @@ public class RegistrationSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String username = "";
-        String password = "";
+        String password = ""; 
         String phone = "";
         boolean validUsername = false;
         boolean validPassword = false;

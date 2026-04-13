@@ -2,7 +2,7 @@ class Login {
     // Private fields (Encapsulation)
     private String registeredUsername;
     private String registeredPassword;
-    private String registeredPhone;
+    private String registeredPhone; 
 
     // 1. Constructor: Initializes the object with data
     public Login(String registeredUsername, String registeredPassword, String registeredPhone) {
