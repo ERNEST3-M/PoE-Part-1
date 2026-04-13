@@ -4,7 +4,7 @@ public class RegistrationSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String username = "";
-        String password = ""; 
+        String password = "";
         String phone = "";
         boolean validUsername = false;
         boolean validPassword = false;
@@ -41,7 +41,7 @@ public class RegistrationSystem {
             }
         }
 
-        //Phone Number input
+        //South African phone Number input
         String phoneRegex = "^(\\+27|27|0)[6-8][0-9]{8}$";
         while (!validPhone) {
             System.out.print("Enter SA phone number (e.g., 0712345678 or +27712345678: ");
@@ -65,11 +65,11 @@ public class RegistrationSystem {
 
             while (!isLoggedIn) {
                 System.out.print("Enter username to login: ");
-                String loginUser = scanner.nextLine();
+                String loginUsername = scanner.nextLine();
                 System.out.print("Enter password to login: ");
-                String loginPass = scanner.nextLine();
+                String loginPassword = scanner.nextLine();
 
-                isLoggedIn = loginSystem.loginUser(loginUser, loginPass);
+                isLoggedIn = loginSystem.loginUser(loginUsername, loginPassword);
                 System.out.println(loginSystem.returnLoginStatus(isLoggedIn));
             }
         }

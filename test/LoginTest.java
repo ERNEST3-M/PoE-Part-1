@@ -9,7 +9,7 @@ public class LoginTest {
     
     public LoginTest() {
     }
-        @BeforeAll 
+    @BeforeAll 
     public static void setUpClass() {
     }
     
@@ -26,7 +26,7 @@ public class LoginTest {
     }
 
     /**
-     * Test of checkUserName method, of class Login.
+        Test of checkUserName method, of class Login.
      */
     @Test
     public void testCheckUserNameTrue() {
@@ -48,7 +48,7 @@ public class LoginTest {
     }
 
     /**
-     * Test of checkPasswordComplexity method, of class Login.
+        Test of checkPasswordComplexity method, of class Login.
      */
     @Test
     public void testCheckPasswordComplexityTrue() {
@@ -70,7 +70,7 @@ public class LoginTest {
 
     }
      /**
-     * Test of checkCellPhoneNumber method, of class Registration.
+        Test of checkCellPhoneNumber method, of class Registration.
      */
     @Test
     public void testCheckCellPhoneNumberTrue() {
@@ -81,7 +81,7 @@ public class LoginTest {
         boolean result = instance.checkPasswordComplexity(password);
         assertEquals(expResult, result);
         }
-     @Test
+    @Test
     public void testCheckCellPhoneNumberFalse() {
         System.out.println("CheckCellPhoneNumber");
         String password = "08966553";
@@ -92,7 +92,7 @@ public class LoginTest {
         }
 
     /**
-     * Test of registerUser method, of class Login.
+        Test of registerUser method, of class Login.
      */
     @Test
     public void testRegisterUserTrue() {
@@ -119,7 +119,7 @@ public class LoginTest {
     }
 
     /**
-     * Test of loginUser method, of class Login.
+        Test of loginUser method, of class Login.
     */
     @Test
     public void testLoginUserTrue() {
@@ -132,7 +132,7 @@ public class LoginTest {
         assertEquals(expResult, result);
     }
     
-        @Test
+    @Test
     public void testLoginUserFalse() {
         System.out.println("loginUser");
         String username = "kyle";
@@ -145,7 +145,7 @@ public class LoginTest {
 
 
     /**
-     * Test of returnLoginStatus method, of class Login.
+        Test of returnLoginStatus method, of class Login.
      */
     @Test
     public void testReturnLoginStatusTrue() {
