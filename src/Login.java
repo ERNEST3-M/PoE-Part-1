@@ -10,7 +10,7 @@ class Login {
         this.registeredPassword = registeredPassword;
         this.registeredPhone = registeredPhone;
     }
-
+    
     // Default constructor (optional, if you create an empty object first)
     public Login() {}
 
